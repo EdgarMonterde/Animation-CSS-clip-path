@@ -35,11 +35,11 @@
     text-align: center;
     top: 0;
     clip-path: circle(55px at 50% 0);
-    transition:  .7s ease all;
+    transition: .7s ease all;
 }
 
 .menu-dezp.active {
-    clip-path: circle(100% at 50% 0);
+    clip-path: circle(50% at 50% 0);
 }
 
 .btn-open-home {
@@ -80,10 +80,70 @@
 }
 
 .elements-home {
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 2000px) and (min-width: 1500px) {
+    .elements-home {
+        height: 70%;
+    }
+}
+
+@media (max-width: 2992px) and (min-width: 2000px) {
+    .elements-home {
+        height: 70%;
+    }
+
+    .elements-home li {
+        padding-bottom: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .elements-home li a {
+        font-size: 55px !important;
+    }
+
+    .btn-open-home {
+        font-size: 45px;
+    }
+
+    .menu-dezp {
+        clip-path: circle(72px at 50% 0);
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 768px) {
+    .elements-home {
+        height: 50%;
+    }
+
+    .elements-home li {
+        padding-bottom: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .elements-home li a {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .elements-home {
+        height: 35%;
+    }
+
+    .elements-home li a {
+        font-size: 20px !important;
+        padding: 10px 30px !important;
+    }
+
+    .elements-home li {
+        padding-bottom: 12px !important;
+        margin-bottom: 12px !important;
+    }
 }
 
 .elements-home li {
@@ -106,8 +166,13 @@
 }
 
 @keyframes dezp {
-    from {transform: translateX(-1000px);}
-    to {transform: translateY(0);}
+    from {
+        transform: translateX(-1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .menu-dezp.active .two {
@@ -115,8 +180,13 @@
 }
 
 @keyframes dezp2 {
-    from {transform: translateX(1000px);}
-    to {transform: translateY(0);}
+    from {
+        transform: translateX(1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .menu-dezp.active .three {
@@ -124,8 +194,13 @@
 }
 
 @keyframes dezp3 {
-    from {transform: translateX(-1000px);}
-    to {transform: translateY(0);}
+    from {
+        transform: translateX(-1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .menu-dezp.active .four {
@@ -133,8 +208,13 @@
 }
 
 @keyframes dezp4 {
-    from {transform: translateX(1000px);}
-    to {transform: translateY(0);}
+    from {
+        transform: translateX(1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .elements-home li a {
